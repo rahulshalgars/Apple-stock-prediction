@@ -19,7 +19,7 @@ st.set_page_config(page_title="Forecasting stock price", layout="wide")
 st.title('Forecasted Prices')
 
  # Load the time series data
-data = pd.read_csv('C:/Users/Admin/OneDrive/Desktop/Project-1/Modeldata.csv', parse_dates=['Date'])
+data = pd.read_csv('Modeldata.csv', parse_dates=['Date'])
 data.set_index('Date', inplace=True)
    
 df=np.log(data)
